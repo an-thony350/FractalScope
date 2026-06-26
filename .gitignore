@@ -1,0 +1,32 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated files
+build/
+dist/
+*.log
+*.jou
+*.str
+*.bit
+*.hwh
+*.xpr
+*.runs/
+*.cache/
+*.gen/
+*.sim/
+*.hw/
+
+# Do not accidentally add restricted coursework/source artefacts
+fpga/
+ps/
+controller/
+notebooks/
+src/
+tb/
+tests/
+.github/
+*.ipynb
+
