@@ -33,8 +33,6 @@ My main work was on the **FPGA hardware and hardware extensions** plus the **pro
 | Extensions | Progressive rendering, dirty rectangles, periodicity checking, Mariani-Silver tile fill, palette banking |
 | Reported speedup | Up to 53x throughput over the multi-threaded CPU baseline at 2048 max iterations |
 
-![System diagram](assets/system_diagram.png)
-
 ## What I Worked On
 
 | Area | Contribution |
@@ -44,18 +42,6 @@ My main work was on the **FPGA hardware and hardware extensions** plus the **pro
 | Pixel write path | Direct framebuffer write architecture using pixel indices, replacing the earlier reorder-buffer style approach. |
 | Processing system | Python scene manager, PL backend integration, AXI-Lite register programming, framebuffer management, HUD overlays, controller abstraction, free-roam modes. |
 | Integration/testing | PYNQ notebooks, RTL testbench strategy, hardware status-counter debugging, CPU-vs-PL comparison support. |
-
-## Public Evidence
-
-| Topic | Document |
-|---|---|
-| System architecture | [`docs/architecture.md`](docs/architecture.md) |
-| FPGA hardware | [`docs/fpga-hardware.md`](docs/fpga-hardware.md) |
-| Processing system | [`docs/processing-system.md`](docs/processing-system.md) |
-| Testing and validation | [`docs/testing-and-validation.md`](docs/testing-and-validation.md) |
-| Contributions | [`docs/project-contributions.md`](docs/project-contributions.md) |
-| Source policy | [`docs/source-availability.md`](docs/source-availability.md) |
-| GitHub setup | [`docs/github-setup.md`](docs/github-setup.md) |
 
 ## System Shape
 
@@ -98,29 +84,6 @@ The accelerator used signed Q4.22 fixed-point arithmetic. This was chosen as a p
 - C++ CPU baseline
 - Jupyter-based hardware bring-up
 - HDMI / VDMA framebuffer pipeline
-
-## Repository Contents
-
-```text
-.
-├── README.md
-├── assets/
-│   ├── logo.png
-│   ├── simple_mandelbrot_set_visual.jpeg
-│   ├── system_diagram.png
-│   └── number-format/
-│       ├── classification_error.png
-│       ├── error_vs_precision.png
-│       └── summary.png
-└── docs/
-    ├── architecture.md
-    ├── fpga-hardware.md
-    ├── processing-system.md
-    ├── testing-and-validation.md
-    ├── project-contributions.md
-    ├── source-availability.md
-    └── github-setup.md
-```
 
 ## Notes for Recruiters
 

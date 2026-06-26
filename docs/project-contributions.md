@@ -7,7 +7,7 @@ FractalScope was a team project. This public dossier focuses on the parts I work
 | Area | Contribution |
 |---|---|
 | FPGA hardware | Worked on the render pipeline, fixed-point datapath decisions, iteration-core scaling, tile scheduling, and timing/resource tradeoffs. |
-| Hardware extensions | Implemented or helped integrate progressive rendering, dirty rectangles, periodicity checking, Mariani-Silver acceleration, and runtime palette selection. |
+| Hardware extensions | Implemented progressive rendering, periodicity checking, Mariani-Silver acceleration. Helped integrate  dirty rectangles and runtime palette selection. |
 | Pixel write path | Helped move the design toward indexed DDR writes instead of a reorder-buffer constrained stream path. |
 | Processing system | Built and integrated the Python-side scene/application layer, hardware backend, register programming, framebuffer/HUD handling, and free-roam modes. |
 | PS/PL integration | Connected mathematical view state to Q4.22 hardware registers, render-control sequencing, writer polling, and HDMI display commits. |
